@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>  
+
+<html>  
+
+  
+
+<head>  
+
+    <title>  
+
+        Password Generator
+
+    </title> 
+
+</head>  
+
+  
+
+<body style = "text-align:center;">  
+
+      
+
+    <h1 style = "color: red">  
+
+        Password Generator  
+
+    </h1> 
+    
+    
+    <h2 style = "color: blue">
+    				
+    			  	Created by PATH08
+    				
+    </h2>
+      
+
+    <h3 style = "color: purple"> 
+
+        Click on the button to generate password
+
+    </h3> 
+
+      
+
+    <button onclick = "gfg_Run()">  
+
+        Generate Password 
+
+    </button> 
+
+      
+
+    <p id = "path08"></p> 
+
+      
+
+    <script> 
+
+        var el_down = document.getElementById("path08"); 
+
+          
+
+        function gfg_Run() { 
+
+            el_down.innerHTML =  
+
+                Math.random().toString(36).slice(2) +  
+
+                Math.random().toString(36) 
+
+                    .toUpperCase().slice(2); 
+
+            }  
+
+    </script>  
+
+</body>  
+
+  
+
+</html>
+
